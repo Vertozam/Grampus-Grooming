@@ -1,5 +1,111 @@
+@font-face {
+    font-family: 'Circe Regular';
+    src: url(../../fonts/Circe-Regular.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Circe Extrabold';
+    src: url(../../fonts/Circe-ExtraBold.woff);
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Circe Light';
+    src: url(../../fonts/Circe-Light.woff);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;                                               
+}
+
+header{
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 999;
+    color: #744037;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#logo{
+    width: 157px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    width: 526px;
+    font-family: 'Circe Light';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+nav a:link{
+    color:#744037;
+    text-decoration: none;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #744037;
+    margin-right: 15px;
+}
+
+.contacts-wrap{
+    display: flex;
+    align-items: center;
+}    
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.contacts span{
+    display: flex;
+}
+.contacts span:first-child{
+    font-family: 'Circe Extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #744037;
+}
+
+.contacts span:last-child{
+    font-family: 'Circe Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: inherit;
 }
