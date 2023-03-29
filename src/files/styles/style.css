@@ -19,6 +19,7 @@
     padding: 0;                                               
 }
 
+    /* Header */
 header{
     position: absolute;
     top:0;
@@ -28,12 +29,12 @@ header{
     color: #744037;
 }
 
-.container{
+.header-container{
     display: flex;
     flex-direction: column;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1200px;;
+    max-width: 1200px;
 }
 .header-wrap{
     display: flex;
@@ -44,6 +45,8 @@ header{
 #logo{
     width: 157px;
 }
+
+    /* Navigation */
 nav{
     display: flex;
     align-items: center;
@@ -72,6 +75,7 @@ nav a:hover{
     transition: .3s ease-out;
 }
 
+    /* Social links */
 .socials{
     display: flex;
     align-items: center;
@@ -96,6 +100,7 @@ nav a:hover{
     transition: .3s ease-out;
 }
 
+    /* Contacts links */
 .contacts-wrap{
     display: flex;
     align-items: center;
@@ -123,4 +128,101 @@ nav a:hover{
     font-weight: 400;
     font-size: 16px;
     color: inherit;
+}
+
+
+    /* Main content */
+    
+    /* Slider */
+.swiper{
+    width: 100%;
+    height: 940px;
+}
+
+.slide-1{
+    background: url(../../media/slider/women-banner.png);
+}
+
+.slide-2{
+    background: url(../../media/slider/stories-banner.png);
+}
+
+.slide-3{
+    background: url(../../media/slider/coffee-banner.png);
+}
+
+.slide-4{
+    background: url(../../media/slider/girl-wtih-dog-banner.png);
+}
+
+.slide-5{
+    background: url(../../media/slider/grooming-banner.jpg);
+}
+
+.slide-6{
+    background: url(../../media/slider/smiley-dog-banner.png);
+}
+
+.slide-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15%;
+    max-width: 1200px;
+}
+
+.slide-container h1{
+    font-family: 'Circe Extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    color: #744037;
+    width: 470px;
+    line-height: 120%;
+
+}
+.slide-container p{
+    font-family: 'Circe Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #23040180;
+    width:470px;
+}
+
+.signup-button{
+    display: flex;
+    width: 225px;
+    height: 50px;
+    margin-top:57px;
+    background: linear-gradient( 12.18deg, #743837 -18.77%, #C3A78E 221.97%);
+    border-radius: 25px;
+    box-shadow: 0px 2px 0px #6C3232, 0px 5px 10px rgba(116, 64, 55, 0.75);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Circe Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.signup-button:hover{
+    background: linear-gradient(185.84deg, #6C3232 4.67%, #7F4743 95.39%);
+    box-shadow: 0px 1px 0px #6C3232, 0px 2px 10px rgba(116, 64, 55, 0.6), inset 0px 4px 9px #552727;
+    transition: .3s ease-in;
+}
+
+.signup-button:active{
+    background: linear-gradient(187.53deg, #AC8E73 25.18%, #C3A78E 94.2%);
+    box-shadow: 0px 1px 0px #9F7D5E, 0px 2px 10px #BA9A7D, inset 0px 4px 9px #97806B;
+    transition: .3s ease-in;
+}
+
+.paw::before{
+    content: url(../../media/slider/paw-icon.svg);
+    margin-right:10px;
 }
