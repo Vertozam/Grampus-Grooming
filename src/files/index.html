@@ -6,23 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links -->
-    <link rel="stylesheet" href="styles/style.css">                     <!-- CSS --> 
-    <link href="https://fonts.cdnfonts.com/css/circe" rel="stylesheet"> <!-- Font -->
+    <link rel="stylesheet" href="styles/style.css">                     <!-- CSS -->
+    <link rel="shortcut icon" href="../media/header/favicon.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- SwiperJS Script -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
 
     <!-- Tittle -->
     <title>Bentley — Grooming studio</title>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="header-container">
             <div class="header-wrap">
                 <div class="logo-container">
-                    <img src="../media/header/logo-BENTLEY-06-1.png" alt="" id="logo">
+                    <a href="#">
+                        <img src="../media/header/logo-BENTLEY-06-1.png" alt="" id="logo">
+                    </a>
                 </div>
                 <nav>
                     <ul class="navigation">
-                        <li> <a href="#">Наши услуги</a> </li>
-                        <li> <a href="#">О Компании</a> </li>
+                        <li> <a href="#grooming-service">Наши услуги</a> </li>
+                        <li> <a href="#">О компании</a> </li>
                         <li> <a href="#">Отзывы</a> </li>
                         <li> <a href="#">Контакты</a> </li>
                     </ul>
@@ -42,10 +55,294 @@
                     <div class="contacts">
                         <span>+7 (911) 501-52-35</span>
                         <span>г.Вологда, ул. Зосимовская, дом 30</span>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <main>
+        <div class="main-container">
+            <div class="swiper-block">
+                <div    div class="swiper swiper-banners">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-1">
+                                <div class="slide-container">
+                                    <h1>
+                                        Первый СПА-Салон для любимых хвостиков
+                                    </h1>
+                                    <p>Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма.</p>
+                                    <div class="signup-button">
+                                        <span class="paw">Записаться</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-2">
+                                <div class="slide-container">
+                                    <h1>
+                                        ИСТОРИИ С НАМИ! ВЫ ВСЕГДА В ТРЕНДЕ!
+                                    </h1>
+                                    <p>Незабываемые впечатления в ваших соцсетях</p>
+                                    <div class="signup-button">
+                                        <span class="paw">Записаться</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-3">
+                                <div class="slide-container">
+                                    <h1>
+                                        ОТКРЫТОСТЬ И ИСКРЕННИЙ СЕРВИС ДЛЯ ВАС!
+                                    </h1>
+                                    <p>Видеонаблюдение, горячий кофе и уютное ожидание</p>
+                                    <div class="signup-button">
+                                        <span class="paw">Записаться</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-4">
+                                <div class="slide-container">
+                                    <h1>
+                                        БЕНТЛИ — еще больше любви к нашим питомцам!
+                                    </h1>
+                                    <p>Создаём культуру ответственного отношения к тем, кого мы приручили</p>
+                                    <div class="signup-button">
+                                        <span class="paw">Записаться</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-5">
+                                <div class="slide-container">
+                                    <h1>
+                                        БЕРЕЖНЫЙ УХОД И ПРОФЕССИОНАЛИЗМ ПО ДОСТУПНЫМ ЦЕНАМ
+                                    </h1>
+                                    <p>Сертифицированные грумеры с опытом работы</p>
+                                    <div class="signup-button">
+                                        <span class="paw">Записаться</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-6">
+                                <div class="slide-container">
+                                    <h1>
+                                        БЕНТЛИ — СТУДИЯ ГРУМИНГА О КОТОРОЙ ГОВОРЯТ!
+                                    </h1>
+                                    <p>Полный комплекс услуг для домашних животных в центре города</p>
+                                    <div class="signup-button">
+                                        <span class="paw">Записаться</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+           <div class="services-block" id="grooming-service">
+                <div class="services-container">
+                    <div class="title">Услуги груминга</div>
+                    <div class="services">
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <img src="../media/services/shpic.png">
+                                <svg class="service-item-svg">
+                                    <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                                    <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-item-title"> Померанский шпиц  </div>
+                            <div class="service-item-bottom">
+                                <div class="service-item-price"> от 1200 р.</div>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <img src="../media/services/corgi.png">
+                                <svg class="service-item-svg">
+                                    <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                                    <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-item-title"> Корги  </div>
+                            <div class="service-item-bottom">
+                                <div class="service-item-price"> от 1200 р.</div>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <img src="../media/services/iork-terer.png">
+                                <svg class="service-item-svg">
+                                    <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                                    <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-item-title"> Йоркширский терьер </div>
+                            <div class="service-item-bottom">
+                                <div class="service-item-price"> от 1200 р.</div>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <img src="../media/services/spaniel.png">
+                                <svg class="service-item-svg">
+                                    <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                                    <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-item-title"> Спаниель  </div>
+                            <div class="service-item-bottom">
+                                <div class="service-item-price"> от 1200 р.</div>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <img src="../media/services/bolonka.png">
+                                <svg class="service-item-svg">
+                                    <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                                    <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-item-title"> Болонка  </div>
+                            <div class="service-item-bottom">
+                                <div class="service-item-price"> от 1200 р.</div>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <img src="../media/services/biver-iork.png">
+                                <svg class="service-item-svg">
+                                    <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                                    <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-item-title"> Бивер-Йорк  </div>
+                            <div class="service-item-bottom">
+                                <div class="service-item-price"> от 1200 р.</div>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <img src="../media/services/pudel.png">
+                                <svg class="service-item-svg">
+                                    <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                                    <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-item-title"> Пудель  </div>
+                            <div class="service-item-bottom">
+                                <div class="service-item-price"> от 1200 р.</div>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <img src="../media/services/cat.png">
+                                <svg class="service-item-svg">
+                                    <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                                    <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-item-title"> Кошки  </div>
+                            <div class="service-item-bottom">
+                                <div class="service-item-price"> от 1200 р.</div>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <section class="price-block">
+                <div class="price-container">
+                    <div class="price-card">
+                        <div class="price-card-img" id="decor-dog">
+                            <img src="../media/price/dog-decor.png">
+                        </div>
+                        <div class="price-card-title">
+                            <h3>Прайс лист на декоративные породы</h3>
+                            <p>Комплексный уход за небольшими декоративными породами</p>
+                            <div class="price-download-button">
+                                <img src="../media/price/download-icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-card-img" id="hard-dog">
+                            <img src="../media/price/dog-hard.png">
+                        </div>
+                        <div class="price-card-title">
+                            <h3>Прайс лист на жесткошёрстные породы</h3>
+                            <p>Комплексный уход за вашими друзьями</p>
+                            <div class="price-download-button">
+                                <img src="../media/price/download-icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-card-img" id="big-dog">
+                            <img src="../media/price/dog-big.png">
+                        </div>
+                        <div class="price-card-title">
+                            <h3>Прайс лист на крупные породы</h3>
+                            <p>Комплексный уход за крупными собаками</p>
+                            <div class="price-download-button">
+                                <img src="../media/price/download-icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </section>
+           <div class="sales-block">
+                <div class="sales-container">
+                    <div class="sale-card" id="puppy-sale">
+                        <div class="sale-title">Акция месяца</div>
+                        <div class="sale-text">-30% на грумминг для щенков</div>
+                        <div class="sale-img">
+                            <img src="../media/sales/puppy1.png">
+                        </div>
+                    </div>
+                    <div class="sale-card" id="bonus-programm">
+                        <div class="sale-title">Бонусная программа</div>
+                        <div class="sale-text">Кешбек - 5% на бонусную карту</div>
+                        <div class="sale-img">
+                            <img src="../media/sales/puppy2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="politics">
+                <a href="#"> Политика конфиденциальности</a>
+            </div>
+            <div class="copyright">
+                Сайт разработан
+                <span id="company">
+                    <a href="https://grampus-studio.ru/">GRAMPUS</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="slider.js"></script>
 </body>
 </html>
