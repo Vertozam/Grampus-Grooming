@@ -138,7 +138,7 @@
                 <div class="services-container">
                     <div class="title">Услуги груминга</div>
                     <div class="services">
-                        <div class="service-item">
+                        <div class="service-item" id="shpic">
                             <div class="service-item-img">
                                 <img src="../media/services/shpic.png">
                                 <svg class="service-item-svg">
@@ -154,7 +154,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="corgi">
                             <div class="service-item-img">
                                 <img src="../media/services/corgi.png">
                                 <svg class="service-item-svg">
@@ -170,7 +170,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="iork">
                             <div class="service-item-img">
                                 <img src="../media/services/iork-terer.png">
                                 <svg class="service-item-svg">
@@ -186,7 +186,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="spaniel">
                             <div class="service-item-img">
                                 <img src="../media/services/spaniel.png">
                                 <svg class="service-item-svg">
@@ -202,7 +202,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="bolonka">
                             <div class="service-item-img">
                                 <img src="../media/services/bolonka.png">
                                 <svg class="service-item-svg">
@@ -218,7 +218,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="biver">
                             <div class="service-item-img">
                                 <img src="../media/services/biver-iork.png">
                                 <svg class="service-item-svg">
@@ -234,7 +234,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="pudel">
                             <div class="service-item-img">
                                 <img src="../media/services/pudel.png">
                                 <svg class="service-item-svg">
@@ -250,7 +250,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="cat">
                             <div class="service-item-img">
                                 <img src="../media/services/cat.png">
                                 <svg class="service-item-svg">
@@ -343,8 +343,69 @@
         </div>
     </footer>
     
-    <div class="popup">
-        
+    <!-- Popup's windows -->
+    <div class="popup disable" id="modal-shpic">
+        <div class="popup-box">
+            <div class="popup-container">
+                <div class="popup-content">
+                    <div class="popup-img">
+                        <img src="../media/services/shpic.png">
+                        <svg class="service-item-svg">
+                            <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                            <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                        </svg>  
+                    </div>
+                    <div class="popup-about">
+                        <div class="popup-title">Померанский шпиц</div>
+                        <div class="popup-list">
+                            <div class="popup-list-title">В услугу груминга входит:</div>
+                            <ul>
+                                <li>Мытье профессиональной косметикой</li>
+                                <li>Выбриваниешерсти между подушечками лап</li>
+                                <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                                <li>Обработка ушей и глаз</li>
+                                <li>Подрезание когтей</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-services">
+                    <div class="popup-service-item">
+                        <div class="popup-service-title">Базовый уход:</div>
+                        <div class="popup-service-price">1600 р.</div>
+                    </div>
+                    <div class="popup-service-item">
+                        <div class="popup-service-title">Стрижка под машинку:</div>
+                        <div class="popup-service-price">+ 1200 р.</div>
+                    </div>
+                    <div class="popup-service-item">
+                        <div class="popup-service-title">Модельная стрижка:</div>
+                        <div class="popup-service-price">+ 2500 р.</div>
+                    </div>
+                </div>
+                <div class="popup-bottom">
+                    <div class="popup-bottom-title">Запишите своего питомца</div>
+                    <div class="popup-form">
+                        <form>
+                            <div class="popup-inputs">
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="+7 999 123-45-67">
+                            </div>
+                            <div class="popup-signup">
+                                <p>Нажимая «Отправить» Вы соглашаетесь с политикой обработки персональных данных</p>
+                                <div class="popup-button">
+                                    <span class="paw">Записаться</span>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-close-button">
+                <img src="../media/close.svg">
+            </div>
+        </div>
     </div>
 
 
