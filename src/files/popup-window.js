@@ -1,16 +1,17 @@
-// Get close button
-let close_button = document.getElementById('close-window');
+document.addEventListener('DOMContentLoaded', function(){
+	var modalButtons = document.querySelectorAll('.popup');
+	var closeButtons = document.querySelectorAll('.popup-close-button');
 
-// Get modal shpic
-let modal_shpic = document.getElementById('modal-shpic');
+	modalButtons.forEach(function(item){
+		item.addEventListener('click', function(event){
+		event.preventDefault();
+		var modalID = this.getAttribute('data-modal');
+		var modalElem = document.querySelector('.modal[data-modal="'+ modalId +'"]');
 
-// Get all services items
-let shipc = document.getElementById('shpic');
+		modalElem.classList.add('active');
 
-close_button.onclick = function(window){
-	window.style.display = 'none';
-}
+		});
+	});
 
-shpic.onclick = function(){
-	modal_shpic.style.display = 'flex';
-}
+});
+

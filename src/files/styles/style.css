@@ -648,22 +648,24 @@ footer a{
 }
 
 .popup{
+    display: none;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     right: 0;
     min-height: 100%;
     min-width: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: rgba(1, 1, 1, 0.5);
     z-index: 999;
     font-family: 'Circe Regular';
     font-weight: 400;
+    transition: .3s ease-in;
 }
 
 .popup-box{
+    position: fixed;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -671,6 +673,7 @@ footer a{
     height: 650px;
     border-radius: 25px;
     background: #fff;
+    transition: .3s ease-in;
 }
 
 .popup-container{
@@ -912,8 +915,4 @@ input{
 
 .active{
     display: flex;
-}
-
-.disable{
-    display: none;
 }
