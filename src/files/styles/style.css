@@ -28,7 +28,7 @@ header{
     top:0;
     width: 100%;
     background: rgba(0, 0, 0, 0);
-    z-index: 999;
+    z-index: 10;
     color: #744037;
 }
 
@@ -423,7 +423,7 @@ nav a:hover{
     border: 4px dashed #D2D2DB;
     border-radius: 25px;
     transition: .4s ease-in-out;
-    z-index: 999;
+    z-index: 10;
     cursor: pointer;
 }
 
@@ -447,7 +447,7 @@ nav a:hover{
 .price-card-img img{
     height: 74px;
     width: 88px;
-    z-index: 999;
+    z-index: 10;
 }
 
 .price-card-img::before{
@@ -537,7 +537,7 @@ nav a:hover{
     background: #744037;
     border-radius: 25px;
     overflow: hidden;
-    z-index: 999;
+    z-index: 10;
 }
 
 .sale-card::before{
@@ -647,68 +647,69 @@ footer a{
     text-decoration: none;
 }
 
-.popup{
-    display: none;
-    align-items: center;
-    justify-content: center;
+/*Modal Windows*/
+.overlay{
     position: fixed;
     top: 0;
-    right: 0;
-    min-height: 100%;
+    left: 0;
+    z-index: 60;
     min-width: 100%;
-    width: 100%;
-    background: rgba(1, 1, 1, 0.5);
-    z-index: 999;
-    font-family: 'Circe Regular';
-    font-weight: 400;
-    transition: .3s ease-in;
+    min-height: 100%;
+    background: #000;
+    opacity: 0.5;
 }
 
-.popup-box{
+.overlay:visible body{
+    overflow: hidden;
+}
+
+.modal{
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    top: 134px;
+    left: 574px;
     width: 772px;
     height: 650px;
-    border-radius: 25px;
+    border: none;
     background: #fff;
-    transition: .3s ease-in;
+    border-radius: 25px;
+    z-index: 999;
+
+    font-family: 'Circe Regular';
 }
 
-.popup-container{
+.modal-container{
     display: flex;
     flex-direction: column;
+
 }
 
-.popup-content{
+.modal-content{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding-top: 44px;
-    padding-left: 71px;
+    margin-top: 44px;
     margin-bottom: 30px;
 }
 
-.popup-img{
-    position:relative;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: flex-end;
+.modal-img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
     width: 230px;
     height: 230px;
-    background: #D2D2DB;
+    margin-left: 71px;
+    border-radius: 21px;
+    background-color: #D2D2DB;
     overflow: hidden;
-    border-radius: 25px;
+    transition: .3s ease-in;
 }
 
-.popup-img img{
-    width: 195px;
-    z-index: 99;
+.modal-img img{
+    z-index: 20;
+    width: 200px;
 }
 
-.popup-img::before{
+.modal-img::before{
     content: "";
     position: absolute;
     width: 318px;
@@ -719,10 +720,10 @@ footer a{
     z-index: 0;
     background-color: #c3c4d0;
     transform: translateX(-50%);
-    z-index: 1;
+    transition: .3s ease-in;
 }
 
-.popup-img svg{
+.modal-img svg{
     position: absolute;
     width: 75px;
     height: 74px;
@@ -730,189 +731,92 @@ footer a{
     top: -18px;
 }
 
-.popup-about{
-    display: flex;
-    flex-direction: column;
-    margin-left: 27px;
-}
-
-.popup-title{
+.modal-text h3{
     font-family: 'Circe Extrabold';
     font-weight: 800;
     font-size: 42px;
-    line-height: 120%;
     color: #744037;
+    margin-left: 27px;
     margin-bottom: 16px;
 }
 
-.popup-list-title{
-    font-family: 'Circe Extrabold';
-    font-weight: 800;
-
+.modal-text ul{
+    margin-left: 32px;
+    font-size: 16px;
+    color: #240401;
+    opacity: 0.5;
 }
 
-.popup-list{
-    color: #240401;
-    opacity: .5;
-    font-size: 16px;
-    line-height: 140%;
-    margin-left: 7px;
-}  
+.modal-text ul h4{
+    font-family: 'Circe Extrabold';
+    font-weight: 800;
+}
 
-.popup-list ul{
-    padding-left: 25px;
-} 
+.modal-text li{
+    margin-left: 25px;
+}
 
-.popup-services{
+.modal-services{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: flex-start;
     margin-bottom: 26px;
 }
 
-.popup-service-item{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.popup-service-title{
+.modal-services{
     font-family: 'Circe Extrabold';
     font-weight: 800;
-    font-size: 16px;
-    line-height: 150%;
     color: #744037;
+    line-height: 150%;
+}
+
+.modal-services h4{
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
-.popup-service-price{
-    font-family: 'Circe Extrabold';
-    font-weight: 800;
+.modal-services span{
     font-size: 24px;
-    line-height: 150%;
     color: #240401;
 }
 
-.popup-bottom{
+.modal-bottom{
+    background: #D2D2DB;
     display: flex;
     flex-direction: column;
-    background: #D2D2DB;
-    height: 30vh;
-    border-radius:0 0 25px 25px;
 }
 
-.popup-bottom-title{
+.modal-bottom h2{
     font-family: 'Circe Extrabold';
     font-weight: 800;
     font-size: 32px;
-    line-height: 120%;
     color: #744037;
-    margin-top: 29px;
-    margin-left: 70px;
+    margin: 29px 0 35px 70px;
 }
 
-.popup-form{
+.modal-bottom form{
     margin-left: 74px;
-    margin-top: 35px;
 }
-
-.popup-inputs{
-    display: flex;
-/*    justify-content: space-between;*/
-}
-
-.popup-form input{
-    border:none;
-    border-bottom: 1px solid #743837;
-    opacity: 1;
-    color: #743837;
+.modal-bottom form input{
     width: 300px;
+    outline: none;
+    margin-right: 29px;
+    padding: 9px 0;
     background: none;
-    padding: 9px 0px;
-    font-size: 16px;
-    transition: .3s ease-in;
+    color: #743837;
+    border: none;
+    border-bottom: 1px solid #743837;
 }
 
-.popup-form input::placeholder{
+.modal-bottom form input:placeholder-shown 
+.modal-bottom form input{
     color: #240401;
-}
-
-.popup-form input:placeholder-shown{
     border-bottom: 1px solid #240401;
     opacity: 0.25;
 }
 
-.popup-form input:last-child{
-    margin-left: 29px;
-}
-
-.popup-form input:focus{
-    border-bottom: 1px solid #743837;
+.modal-form form input:hover{
+    color: #743837;
     opacity: 1;
-}
-
-input{
-    outline: none;
-}
-
-.popup-signup{
-    margin-top: 35px;
-    display: flex;
-    flex-direction: row;
-}
-
-.popup-signup p{
-    font-family: 'Circe Regular';
-    font-weight: 400;
-    font-size: 16px;
-    width: 328px;
-    color: #240401;
-    opacity: .5;
-}
-
-.popup-button{
-    width: 225px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    margin-left: 76px;
-
-    background: linear-gradient(12.18deg, #743837 -18.77%, #C3A78E 221.97%);
-    box-shadow: 0px 2px 0px #6C3232, 0px 5px 10px rgba(116, 64, 55, 0.75);
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-.popup-button:hover{
-    background: linear-gradient(185.84deg, #6C3232 4.67%, #7F4743 95.39%);
-    box-shadow: 0px 1px 0px #6C3232, 0px 2px 10px rgba(116, 64, 55, 0.6), inset 0px 4px 9px #552727;
-    transition: .2s ease-in-out;
-}
-
-.popup-button:active{
-    background: linear-gradient(187.53deg, #AC8E73 25.18%, #C3A78E 94.2%);
-    box-shadow: 0px 1px 0px #9F7D5E, 0px 2px 10px #BA9A7D, inset 0px 4px 9px #97806B;
-    transition: .1s ease-in;
-}
-
-.popup-close-button{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 20px;
-    margin-right: 25px;
-    cursor: pointer;
-    transition: .2s ease-in;
-}
-
-.popup-close-button:hover{
-    filter: invert(50%);
-    transition: .1s ease-in;
-}
-
-.active{
-    display: flex;
 }

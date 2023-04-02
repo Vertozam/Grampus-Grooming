@@ -343,72 +343,60 @@
         </div>
     </footer>
     
-    <!-- Popup's windows -->
-    <div class="popup " id="modal-shpic">
-        <div class="popup-box">
-            <div class="popup-container">
-                <div class="popup-content">
-                    <div class="popup-img">
-                        <img src="../media/services/shpic.png">
-                        <svg class="service-item-svg">
-                            <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
-                            <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
-                        </svg>  
-                    </div>
-                    <div class="popup-about">
-                        <div class="popup-title">Померанский шпиц</div>
-                        <div class="popup-list">
-                            <div class="popup-list-title">В услугу груминга входит:</div>
-                            <ul>
-                                <li>Мытье профессиональной косметикой</li>
-                                <li>Выбриваниешерсти между подушечками лап</li>
-                                <li>Гигиеническая стрижка интимных зон и хвоста</li>
-                                <li>Обработка ушей и глаз</li>
-                                <li>Подрезание когтей</li>
-                            </ul>
-                        </div>
-                    </div>
+    <!-- modal windows -->
+<!--     <div class="modal">
+        <div class="modal-content">Content</div>
+        <div class="modal-services">Services</div>
+        <div class="modal-bottom">Bottom</div>
+    </div> -->
+    <dialog open class="modal">
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="../media/services/shpic.png">
+                    <svg class="service-item-svg">
+                        <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                        <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                    </svg>
                 </div>
-                <div class="popup-services">
-                    <div class="popup-service-item">
-                        <div class="popup-service-title">Базовый уход:</div>
-                        <div class="popup-service-price">1600 р.</div>
-                    </div>
-                    <div class="popup-service-item">
-                        <div class="popup-service-title">Стрижка под машинку:</div>
-                        <div class="popup-service-price">+ 1200 р.</div>
-                    </div>
-                    <div class="popup-service-item">
-                        <div class="popup-service-title">Модельная стрижка:</div>
-                        <div class="popup-service-price">+ 2500 р.</div>
-                    </div>
-                </div>
-                <div class="popup-bottom">
-                    <div class="popup-bottom-title">Запишите своего питомца</div>
-                    <div class="popup-form">
-                        <form>
-                            <div class="popup-inputs">
-                                <input type="text" placeholder="Ваше имя">
-                                <input type="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="+7 999 123-45-67">
-                            </div>
-                            <div class="popup-signup">
-                                <p>Нажимая «Отправить» Вы соглашаетесь с политикой обработки персональных данных</p>
-                                <div class="popup-button">
-                                    <span class="paw">Записаться</span>
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
+                <div class="modal-text">
+                    <h3>Померанский шпиц</h3>
+                    <ul>
+                        <h4>В услугу грумминга входит:</h4>
+                        <li>Мытье профессиональной косметикой</li>
+                        <li>Выбривание шерсти между подушечками лап</li>
+                        <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                        <li>Обработка ушей и глаз</li>
+                        <li>Подрезание когтей</li>
+                    </ul>
                 </div>
             </div>
-            <div class="popup-close-button" data-modal="1">
-                <img src="../media/close.svg">
+            <div class="modal-services">
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form action="" method="get" name="petSign">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                </form>
             </div>
         </div>
-    </div>
+    </dialog>
 
-    <script src="popup-window.js"></script>
+    <div class="overlay"></div>
+    <script src="modalWindow.js"></script>
     <script src="slider.js"></script>
 </body>
 </html>
