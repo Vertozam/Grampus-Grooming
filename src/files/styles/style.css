@@ -711,7 +711,8 @@ footer a{
 
 .modal-img img{
     z-index: 20;
-    width: 200px;
+    min-width: 200px;
+    height: 218px;
 }
 
 .modal-img::before{
@@ -898,3 +899,67 @@ footer a{
     transition: .3s ease;
     opacity: 1;
 }
+
+.price-modal{
+    position: fixed;
+    top: 30px;
+    left: 475px;
+    width: 970px;
+    height: 900px;
+    border: none;
+    background: #fff;
+    border-radius: 25px;
+    z-index: 999;
+/*    overflow: hidden;*/
+    font-family: 'Circe Regular';
+    transition: .3s ease-out;
+    opacity: 1;
+    scroll: visible;
+}
+
+.modal-price-title{
+    font-family: 'Circe Extrabold';
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 120%;
+    color: #744037;
+    margin: 46px 0 57px 70px;
+}
+
+.modal-price-table{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+/*    margin: 0 70px;*/
+}
+
+.price-modal table{
+    border-collapse: collapse;
+    line-height: 150%;
+    font-size: 20px;
+}
+
+.price-modal table th{
+    text-align: left;
+    color: #744037;
+    font-size: 16px;
+    width: 200px;
+}
+
+.price-modal table td{
+    border-bottom: 1px solid #D2D2DB;
+    padding: 15px 0;
+    padding-right: 30px;
+    width: 200px;
+    margin: 0;
+    color: #240401;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.price-modal table tbody td:hover{
+    color: #744037;
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
