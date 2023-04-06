@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links -->
-    <link rel="stylesheet" href="styles/style.css">                     <!-- CSS --> 
+    <link rel="stylesheet" href="styles/style.css">                     <!-- CSS -->
     <link rel="shortcut icon" href="../media/header/favicon.svg" type="image/x-icon">
 
-    <!-- SwiperJS Script -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- SwiperJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
 
     <!-- Tittle -->
@@ -30,7 +37,7 @@
                 <nav>
                     <ul class="navigation">
                         <li> <a href="#grooming-service">Наши услуги</a> </li>
-                        <li> <a href="#">О Компании</a> </li>
+                        <li> <a href="#">О компании</a> </li>
                         <li> <a href="#">Отзывы</a> </li>
                         <li> <a href="#">Контакты</a> </li>
                     </ul>
@@ -50,7 +57,7 @@
                     <div class="contacts">
                         <span>+7 (911) 501-52-35</span>
                         <span>г.Вологда, ул. Зосимовская, дом 30</span>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,8 +82,8 @@
                                 <div class="slide-container">
                                     <h1>
                                         ИСТОРИИ С НАМИ! ВЫ ВСЕГДА В ТРЕНДЕ!
-                                    </h1> 
-                                    <p>Незабываемые впечатления в ваших соцсетях</p>  
+                                    </h1>
+                                    <p>Незабываемые впечатления в ваших соцсетях</p>
                                     <div class="signup-button">
                                         <span class="paw">Записаться</span>
                                     </div>
@@ -86,8 +93,8 @@
                                 <div class="slide-container">
                                     <h1>
                                         ОТКРЫТОСТЬ И ИСКРЕННИЙ СЕРВИС ДЛЯ ВАС!
-                                    </h1> 
-                                    <p>Видеонаблюдение, горячий кофе и уютное ожидание</p>  
+                                    </h1>
+                                    <p>Видеонаблюдение, горячий кофе и уютное ожидание</p>
                                     <div class="signup-button">
                                         <span class="paw">Записаться</span>
                                     </div>
@@ -97,8 +104,8 @@
                                 <div class="slide-container">
                                     <h1>
                                         БЕНТЛИ — еще больше любви к нашим питомцам!
-                                    </h1> 
-                                    <p>Создаём культуру ответственного отношения к тем, кого мы приручили</p>  
+                                    </h1>
+                                    <p>Создаём культуру ответственного отношения к тем, кого мы приручили</p>
                                     <div class="signup-button">
                                         <span class="paw">Записаться</span>
                                     </div>
@@ -108,8 +115,8 @@
                                 <div class="slide-container">
                                     <h1>
                                         БЕРЕЖНЫЙ УХОД И ПРОФЕССИОНАЛИЗМ ПО ДОСТУПНЫМ ЦЕНАМ
-                                    </h1> 
-                                    <p>Сертифицированные грумеры с опытом работы</p>  
+                                    </h1>
+                                    <p>Сертифицированные грумеры с опытом работы</p>
                                     <div class="signup-button">
                                         <span class="paw">Записаться</span>
                                     </div>
@@ -119,8 +126,8 @@
                                 <div class="slide-container">
                                     <h1>
                                         БЕНТЛИ — СТУДИЯ ГРУМИНГА О КОТОРОЙ ГОВОРЯТ!
-                                    </h1> 
-                                    <p>Полный комплекс услуг для домашних животных в центре города</p>  
+                                    </h1>
+                                    <p>Полный комплекс услуг для домашних животных в центре города</p>
                                     <div class="signup-button">
                                         <span class="paw">Записаться</span>
                                     </div>
@@ -133,7 +140,7 @@
                 <div class="services-container">
                     <div class="title">Услуги груминга</div>
                     <div class="services">
-                        <div class="service-item">
+                        <div class="service-item" id="shpic">
                             <div class="service-item-img">
                                 <img src="../media/services/shpic.png">
                                 <svg class="service-item-svg">
@@ -149,7 +156,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="corgi">
                             <div class="service-item-img">
                                 <img src="../media/services/corgi.png">
                                 <svg class="service-item-svg">
@@ -165,7 +172,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="iork">
                             <div class="service-item-img">
                                 <img src="../media/services/iork-terer.png">
                                 <svg class="service-item-svg">
@@ -181,7 +188,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="spaniel">
                             <div class="service-item-img">
                                 <img src="../media/services/spaniel.png">
                                 <svg class="service-item-svg">
@@ -197,7 +204,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="bolonka">
                             <div class="service-item-img">
                                 <img src="../media/services/bolonka.png">
                                 <svg class="service-item-svg">
@@ -213,7 +220,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="biver">
                             <div class="service-item-img">
                                 <img src="../media/services/biver-iork.png">
                                 <svg class="service-item-svg">
@@ -229,7 +236,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="pudel">
                             <div class="service-item-img">
                                 <img src="../media/services/pudel.png">
                                 <svg class="service-item-svg">
@@ -245,7 +252,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" id="cat">
                             <div class="service-item-img">
                                 <img src="../media/services/cat.png">
                                 <svg class="service-item-svg">
@@ -266,33 +273,772 @@
            </div>
            <section class="price-block">
                 <div class="price-container">
-                    <div class="price-title">Прайсы</div>
-                    <div clas="price-cards-block">
-                        <div class="price-nav">
-                            <div class="left-arrow swiper-pagination-prev">
-                                <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
-                                </svg>
-                            </div>
-                            <div class="right-arrow swiper-pagination-next">
-                                <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.584 5.648L5.136 3.2L7.68 0.655999L14.472 7.448L7.68 14.24L5.136 11.696L7.584 9.248H0.96V5.648H7.584Z" fill="#240401"></path>
-                                </svg>
+                    <div class="price-card" id="decor-pet">
+                        <div class="price-card-img" id="decor-dog">
+                            <img src="../media/price/dog-decor.png">
+                        </div>
+                        <div class="price-card-title">
+                            <h3>Прайс лист на декоративные породы</h3>
+                            <p>Комплексный уход за небольшими декоративными породами</p>
+                            <div class="price-download-button">
+                                <img src="../media/price/download-icon.svg" alt="">
                             </div>
                         </div>
-                        <div class="swiper-price">
-                            <div class="swiper-price-wrapper">
-                                <div class="swiper-slide price-slide">
-                                    <div class="price-title">Прайс-лист на большие породы</div>
-                                    <div></div>
-                                </div>
+                    </div>
+                    <div class="price-card" id="hard-pet">
+                        <div class="price-card-img" id="hard-dog">
+                            <img src="../media/price/dog-hard.png">
+                        </div>
+                        <div class="price-card-title">
+                            <h3>Прайс лист на жесткошёрстные породы</h3>
+                            <p>Комплексный уход за вашими друзьями</p>
+                            <div class="price-download-button">
+                                <img src="../media/price/download-icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card" id="big-pet">
+                        <div class="price-card-img" id="big-dog">
+                            <img src="../media/price/dog-big.png">
+                        </div>
+                        <div class="price-card-title">
+                            <h3>Прайс лист на крупные породы</h3>
+                            <p>Комплексный уход за крупными собаками</p>
+                            <div class="price-download-button">
+                                <img src="../media/price/download-icon.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
            </section>
+           <div class="sales-block">
+                <div class="sales-container">
+                    <div class="sale-card" id="puppy-sale">
+                        <div class="sale-title">Акция месяца</div>
+                        <div class="sale-text">-30% на грумминг для щенков</div>
+                        <div class="sale-img">
+                            <img src="../media/sales/puppy1.png">
+                        </div>
+                    </div>
+                    <div class="sale-card" id="bonus-programm">
+                        <div class="sale-title">Бонусная программа</div>
+                        <div class="sale-text">Кешбек - 5% на бонусную карту</div>
+                        <div class="sale-img">
+                            <img src="../media/sales/puppy2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="politics">
+                <a href="#"> Политика конфиденциальности</a>
+            </div>
+            <div class="copyright">
+                Сайт разработан
+                <span id="company">
+                    <a href="https://grampus-studio.ru/">GRAMPUS</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- service modal windows -->
+    <div  class="modal" id="shpic-modal">
+        <div class="modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="../media/services/shpic.png">
+                    <svg class="service-item-svg">
+                        <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                        <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                    </svg>
+                </div>
+                <div class="modal-text">
+                    <h3>Померанский шпиц</h3>
+                    <ul>
+                        <h4>В услугу грумминга входит:</h4>
+                        <li>Мытье профессиональной косметикой</li>
+                        <li>Выбривание шерсти между подушечками лап</li>
+                        <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                        <li>Обработка ушей и глаз</li>
+                        <li>Подрезание когтей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-services">
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form action="" method="get" name="petSign">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <div class="modal-form-confirm">
+                        <p>
+                            Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                        </p>
+                        <button type="submit" class="modal-sub-button paw">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  class="modal" id="corgi-modal">
+        <div class="modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="../media/services/corgi.png">
+                    <svg class="service-item-svg">
+                        <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                        <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                    </svg>
+                </div>
+                <div class="modal-text">
+                    <h3>Корги</h3>
+                    <ul>
+                        <h4>В услугу грумминга входит:</h4>
+                        <li>Мытье профессиональной косметикой</li>
+                        <li>Выбривание шерсти между подушечками лап</li>
+                        <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                        <li>Обработка ушей и глаз</li>
+                        <li>Подрезание когтей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-services">
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form action="" method="get" name="petSign">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <div class="modal-form-confirm">
+                        <p>
+                            Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                        </p>
+                        <button type="submit" class="modal-sub-button paw">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  class="modal" id="iork-modal">
+        <div class="modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="../media/services/iork-terer.png">
+                    <svg class="service-item-svg">
+                        <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                        <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                    </svg>
+                </div>
+                <div class="modal-text">
+                    <h3>Йоркширский терьер</h3>
+                    <ul>
+                        <h4>В услугу грумминга входит:</h4>
+                        <li>Мытье профессиональной косметикой</li>
+                        <li>Выбривание шерсти между подушечками лап</li>
+                        <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                        <li>Обработка ушей и глаз</li>
+                        <li>Подрезание когтей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-services">
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form action="" method="get" name="petSign">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <div class="modal-form-confirm">
+                        <p>
+                            Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                        </p>
+                        <button type="submit" class="modal-sub-button paw">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  class="modal" id="spaniel-modal">
+        <div class="modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="../media/services/spaniel.png">
+                    <svg class="service-item-svg">
+                        <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                        <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                    </svg>
+                </div>
+                <div class="modal-text">
+                    <h3>Спаниель</h3>
+                    <ul>
+                        <h4>В услугу грумминга входит:</h4>
+                        <li>Мытье профессиональной косметикой</li>
+                        <li>Выбривание шерсти между подушечками лап</li>
+                        <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                        <li>Обработка ушей и глаз</li>
+                        <li>Подрезание когтей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-services">
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form action="" method="get" name="petSign">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <div class="modal-form-confirm">
+                        <p>
+                            Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                        </p>
+                        <button type="submit" class="modal-sub-button paw">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  class="modal" id="bolonka-modal">
+        <div class="modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="../media/services/bolonka.png">
+                    <svg class="service-item-svg">
+                        <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                        <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                    </svg>
+                </div>
+                <div class="modal-text">
+                    <h3>Болонка</h3>
+                    <ul>
+                        <h4>В услугу грумминга входит:</h4>
+                        <li>Мытье профессиональной косметикой</li>
+                        <li>Выбривание шерсти между подушечками лап</li>
+                        <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                        <li>Обработка ушей и глаз</li>
+                        <li>Подрезание когтей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-services">
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form action="" method="get" name="petSign">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <div class="modal-form-confirm">
+                        <p>
+                            Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                        </p>
+                        <button type="submit" class="modal-sub-button paw">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  class="modal" id="biver-modal">
+        <div class="modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="../media/services/biver-iork.png">
+                    <svg class="service-item-svg">
+                        <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                        <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                    </svg>
+                </div>
+                <div class="modal-text">
+                    <h3>Бивер-Йорк</h3>
+                    <ul>
+                        <h4>В услугу грумминга входит:</h4>
+                        <li>Мытье профессиональной косметикой</li>
+                        <li>Выбривание шерсти между подушечками лап</li>
+                        <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                        <li>Обработка ушей и глаз</li>
+                        <li>Подрезание когтей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-services">
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form action="" method="get" name="petSign">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <div class="modal-form-confirm">
+                        <p>
+                            Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                        </p>
+                        <button type="submit" class="modal-sub-button paw">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  class="modal" id="pudel-modal">
+        <div class="modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="../media/services/pudel.png">
+                    <svg class="service-item-svg">
+                        <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                        <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                    </svg>
+                </div>
+                <div class="modal-text">
+                    <h3>Пудель</h3>
+                    <ul>
+                        <h4>В услугу грумминга входит:</h4>
+                        <li>Мытье профессиональной косметикой</li>
+                        <li>Выбривание шерсти между подушечками лап</li>
+                        <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                        <li>Обработка ушей и глаз</li>
+                        <li>Подрезание когтей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-services">
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form action="" method="get" name="petSign">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <div class="modal-form-confirm">
+                        <p>
+                            Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                        </p>
+                        <button type="submit" class="modal-sub-button paw">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  class="modal" id="cat-modal">
+        <div class="modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="../media/services/cat.png">
+                    <svg class="service-item-svg">
+                        <ellipse cx="41.5" cy="34" rx="33.5" ry="34" fill="#ECECF9"></ellipse>
+                        <circle cx="10" cy="64" r="8.5" fill="#ECECF9" stroke="#ECECF9" stroke-width="3"></circle>
+                    </svg>
+                </div>
+                <div class="modal-text">
+                    <h3>Кошки</h3>
+                    <ul>
+                        <h4>В услугу грумминга входит:</h4>
+                        <li>Мытье профессиональной косметикой</li>
+                        <li>Выбривание шерсти между подушечками лап</li>
+                        <li>Гигиеническая стрижка интимных зон и хвоста</li>
+                        <li>Обработка ушей и глаз</li>
+                        <li>Подрезание когтей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-services">
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+                <div class="modal-service-item">
+                    <h4>Базовый уход</h4>
+                    <span>1600 р.</span>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form action="" method="get" name="petSign">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <div class="modal-form-confirm">
+                        <p>
+                            Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                        </p>
+                        <button type="submit" class="modal-sub-button paw">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- price modal windows -->
+    <div class="price-modal" id="modal-decor">
+        <div class="price-modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-price-title">Декоративные породы</div>
+            <div class="modal-price-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Порода:</th>
+                            <th>Базовый уход:</th>
+                            <th>Стрижка под машинку:</th>
+                            <th>Модельная стрижка:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Бишон</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Китайская хохлатая голая</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Китайская хохлатая пуховая</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Мальтипу</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Папильон</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Пекинес</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Чихуахуа</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Ши-Тцу</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-price-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form method="get" name="petSignPrice">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <input type="text" name="poroda" placeholder="Порода">
+                </form>
+                <div class="modal-price-confirm">
+                    <p>
+                        Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                    </p>
+                    <button type="submit" class="modal-sub-button paw price-button">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price-modal" id="hard-decor">
+        <div class="price-modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-price-title">Жесткошерстные породы</div>
+            <div class="modal-price-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Порода:</th>
+                            <th>Базовый уход:</th>
+                            <th>Стрижка под машинку:</th>
+                            <th>Модельная стрижка:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Бишон</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Китайская хохлатая голая</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Китайская хохлатая пуховая</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Мальтипу</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Папильон</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Пекинес</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Чихуахуа</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Ши-Тцу</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-price-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form method="get" name="petSignPrice">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <input type="text" name="poroda" placeholder="Порода">
+                </form>
+                <div class="modal-price-confirm">
+                    <p>
+                        Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                    </p>
+                    <button type="submit" class="modal-sub-button paw price-button">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price-modal" id="big-decor">
+        <div class="price-modal-close">
+            <img src="../media/close.svg">
+        </div>
+        <div class="modal-container">
+            <div class="modal-price-title">Крупные породы</div>
+            <div class="modal-price-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Порода:</th>
+                            <th>Базовый уход:</th>
+                            <th>Стрижка под машинку:</th>
+                            <th>Модельная стрижка:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Бишон</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Китайская хохлатая голая</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Китайская хохлатая пуховая</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Мальтипу</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Папильон</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Пекинес</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Чихуахуа</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Ши-Тцу</td>
+                            <td>1000 р.</td>
+                            <td>+ 1200 р.</td>
+                            <td>+ 2500 р.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-price-bottom">
+                <h2>Запишите своего питомца</h2>
+                <form method="get" name="petSignPrice">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="+7 999 123-45-67">
+                    <input type="text" name="poroda" placeholder="Порода">
+                </form>
+                <div class="modal-price-confirm">
+                    <p>
+                        Нажимая «Отправить» Вы соглашаетесь политикой обработки персональных данных 
+                    </p>
+                    <button type="submit" class="modal-sub-button paw price-button">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="overlay"></div>
+
+
+    <script src="serviceModal.js"></script>
+    <script src="priceModal.js"></script>
     <script src="slider.js"></script>
 </body>
 </html>

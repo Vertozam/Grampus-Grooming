@@ -10,14 +10,5 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-const swiper_price = new Swiper('.swiper-price', {
-    direction: 'horizontal',
-    loop: false,
-    autoplay: false,
-    navigation: {
-        nextEl: '.swiper-pagination-next',
-        prevEl: 'swiper-pagination-prev',
-    },
-    
-});
+
 
